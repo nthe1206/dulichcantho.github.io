@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #b3e5fc, #ffffff);
+  color: #003366;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: #0288d1;
+  color: white;
+  animation: fadeIn 1.5s ease;
+}
+
+section {
+  padding: 40px 10%;
+  animation: fadeUp 1s ease;
+}
+
+h2 {
+  color: #0277bd;
+  border-left: 5px solid #0288d1;
+  padding-left: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+button {
+  background-color: #0288d1;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #01579b;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.comment-list {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.comment {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.deleteBtn {
+  background-color: #e53935;
+  float: right;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.deleteBtn:hover {
+  background-color: #c62828;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #01579b;
+  color: white;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+  from {transform: translateY(20px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
